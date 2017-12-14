@@ -14,10 +14,30 @@
     <div class="container">
       <header>
         <h1>NAMES GOES HERE</h1>
+        <button type="button" name="button">Follow</button>
       </header>
       <nav>
+        <!-- Modal Trigger -->
+          <button data-target="modal-form" class="btn modal-trigger">Modal</button>
       </nav>
+      <div class="grid">
 
+      </div>
     </div>
+      <!-- Modal Structure -->
+      <div id="modal-form" class="modal bottom-sheet">
+        <div class="modal-content">
+          <h4>Enter Album Information</h4>
+          <form class="album-info" action="index.html" method="post">
+            Image URL: <input type="text" name="album-art"><br>
+            Artist Name: <input type="text" name="artist-name"><br>
+            Album Title: <input type="text" name="album-title"><br>
+            Release Date: <input type="text" name="release-date"><br>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
+        </div>
+      </div>
   </body>
 </html>

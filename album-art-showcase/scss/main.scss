@@ -1,0 +1,14 @@
+header {
+  background: red;
+      /*will be background img*/
+  height: 30vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
