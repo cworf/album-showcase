@@ -1,0 +1,29 @@
+Using everything you've learned about HTML, CSS, JavaScript, and jQuery, create an app that allows users to showcase music album artwork.
+
+Include a basic form to add new artwork. Use jQuery in order to insert image URIs into your HTML.
+Use JavaScript objects, constructors, and prototypes. Object properties may include the name of the band, the title of the album, its release year, and of course, an image URI.
+You don't have a database to work with, unfortunately, but using what you know about Javascript objects and arrays, it should be easy to find a workaround (kind of how you did during Intro group week).
+
+Add some unique features, like the ability to rate, leave comments, or emulate purchases.
+Look for opportunities to incorporate Flexbox as well as transitions, transforms, and animations.
+
+
+
+
+FORM
+  album info
+    name of band
+    title of album
+    release year
+    image URI
+    STRETCH - rate, leave comments, emulate purchases, recently-played
+
+FLEXBOX
+  transitions
+  transforms
+  animations
+
+
+
+Grid w/ album art
+  Click to open a modal w/ additional info on that album
