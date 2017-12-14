@@ -1,6 +1,6 @@
 $(function() {
   // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-  $('#modal-form').modal();
+  $('#modal-form, #album-info').modal();
   $('.datepicker').pickadate({
       selectMonths: true, // Creates a dropdown to control month
       selectYears: 15, // Creates a dropdown of 15 years to control year,
