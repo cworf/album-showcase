@@ -16,7 +16,7 @@ FORM
     title of album
     release year
     image URI
-    STRETCH - rate, leave comments, emulate purchases, recently-played
+    STRETCH - rate, leave comments, emulate purchases, recently-played, tracklist, social media icons
 
 FLEXBOX
   transitions

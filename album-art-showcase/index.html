@@ -5,39 +5,81 @@
     src="https://code.jquery.com/jquery-3.2.1.js"
     integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
     crossorigin="anonymous"></script>
-    <script type="text/javascript"></script>
+    <script type="text/javascript" src="js/bin/materialize.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
     <title>Musik Stuffs</title>
   </head>
   <body>
-    <div class="container">
-      <header>
+    <header>
+      <div class="content">
         <h1>NAMES GOES HERE</h1>
-        <button type="button" name="button">Follow</button>
-      </header>
-      <nav>
-        <!-- Modal Trigger -->
-          <button data-target="modal-form" class="btn modal-trigger">Modal</button>
-      </nav>
-      <div class="grid">
-
+        <button type="button" name="button" class="btn">Follow</button>
+      </div>
+    </header>
+    <nav>
+      <div class="logo">
+        <img src="img/logo.png" alt="">
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#">Search</a></li>
+          <li><a href="#">Your Music</a></li>
+          <li><a href="#">Favorites</a></li>
+        </ul>
+      </div> <!--menu-->
+      <div class="recently-played nav-item">
+        <a href="#">Recently Played</a>
+      </div>
+      <div class="nav-footer nav-item">
+        <a href="#">Install App</a>
+      </div>
+      <!-- Modal Trigger -->
+      <button data-target="modal-form" class="btn modal-trigger">Add Tracks</button>
+    </nav>
+    <div class="grid">
+      <div data-target="modal-form" class="album modal-trigger">
+        <img src="img/profile-img.jpg" alt="">
+        <h3>I am a Skeleton</h3>
+      </div>
+      <div data-target="modal-form" class="album modal-trigger">
+        <img src="img/profile-img.jpg" alt="">
+        <h3>Also a Skeleton</h3>
+      </div>
+      <div data-target="modal-form" class="album modal-trigger">
+        <img src="img/profile-img.jpg" alt="">
+        <h3>Still a Skeleton</h3>
       </div>
     </div>
-      <!-- Modal Structure -->
-      <div id="modal-form" class="modal bottom-sheet">
-        <div class="modal-content">
-          <h4>Enter Album Information</h4>
-          <form class="album-info" action="index.html" method="post">
-            Image URL: <input type="text" name="album-art"><br>
-            Artist Name: <input type="text" name="artist-name"><br>
-            Album Title: <input type="text" name="album-title"><br>
-            Release Date: <input type="text" name="release-date"><br>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
-        </div>
+  </div>
+    <!-- Modal Structure -->
+    <div id="modal-form" class="modal bottom-sheet">
+      <div class="modal-content">
+        <h4>Enter Album Information</h4>
+        <form class="album-info" action="index.html" method="post">
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>Select Image</span>
+              <input type="file">
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text">
+            </div>
+          </div>
+          <div class="input-field">
+            Artist Name: <input type="text" name="artist-name">
+          </div>
+          <div class="input-field">
+            Album Title: <input type="text" name="album-title">
+          </div>
+          <div class="input-field">
+            Release Date: <input type="text" class="datepicker">
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
       </div>
   </body>
 </html>
