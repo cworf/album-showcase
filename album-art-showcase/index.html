@@ -7,6 +7,7 @@
     crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/bin/materialize.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato|Spectral+SC" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <meta charset="utf-8">
     <title>Musik Stuffs</title>
@@ -14,7 +15,7 @@
   <body>
     <header>
       <div class="content">
-        <h1>NAMES GOES HERE</h1>
+        <h1>NAMES GOES HERES</h1>
         <button type="button" name="button" class="btn">Follow</button>
       </div>
     </header>
@@ -40,54 +41,55 @@
     </nav>
     <div class="grid">
       <div data-target="album-info" class="album modal-trigger">
-        <img src="img/profile-img.jpg" alt="">
-        <h3>I am a Skeleton</h3>
+        <div class="square">
+          <img src="img/gangstergrass.jpg" alt="">
+        </div>
+        <h3>Lightning on the Strings, Thunder on the Mic</h3>
       </div>
       <div data-target="album-info" class="album modal-trigger">
-        <img src="img/profile-img.jpg" alt="">
-        <h3>Also a Skeleton</h3>
+        <div class="square">
+          <img src="img/hymns-for-the-hopeless.jpg" alt="">
+        </div>
+        <h3>William Elliott Whitmore</h3>
       </div>
       <div data-target="album-info" class="album modal-trigger">
-        <img src="img/profile-img.jpg" alt="">
-        <h3>Still a Skeleton</h3>
+        <div class="square">
+          <img src="img/ten-thousand.jpg" alt="">
+        </div>
+        <h3>Agnostic Mountain Gospel Choir</h3>
       </div>
-    </div>
+    </div> <!--grid-->
   </div>
 
-  <div id="album-info" class="modal album-info">
-    <img src="img/profile-img.jpg" alt="">
-    <h2>ALBUM NAME HERE</h2>
-    <h5>Artist Name</h5>
-    <h5>Date Released</h5>
+<!-- ALBUM INFO -->
+  <div class="modals">
+    
   </div>
 
     <!-- Modal Structure -->
     <div id="modal-form" class="modal bottom-sheet">
       <div class="modal-content">
         <h4>Enter Album Information</h4>
-        <form class="album-info" action="index.html" method="post">
-          <div class="file-field input-field">
-            <div class="btn">
-              <span>Select Image</span>
-              <input type="file">
-            </div>
-            <div class="file-path-wrapper">
-              <input class="file-path validate" type="text">
-            </div>
+        <form id="album-info">
+          <div class="input-field">
+              Album Cover: <input type="text" class="album-image">
           </div>
           <div class="input-field">
-            Artist Name: <input type="text" name="artist-name">
+            Artist Name: <input type="text" id="artist-name">
           </div>
           <div class="input-field">
-            Album Title: <input type="text" name="album-title">
+            Album Title: <input type="text" id="album-title">
           </div>
           <div class="input-field">
-            Release Date: <input type="text" class="datepicker">
+            Release Date: <input type="text" class="datepicker" id="release-date">
+          </div>
+          <div class="input-field">
+            Other Info: <input type="text" id="other-info">
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</button>
           </div>
         </form>
-      </div>
-      <div class="modal-footer">
-        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Submit</a>
       </div>
   </body>
 </html>

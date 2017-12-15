@@ -6835,9 +6835,19 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   stroke-linecap: round;
   /*shape-rendering: crispEdges;*/ }
 
+@font-face {
+  font-family: 'gobold';
+  src: url(../fonts/gobold/gobold.otf); }
 body {
   background: black;
-  color: white; }
+  color: white;
+  font-family: 'Lato', sans-serif; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'gobold', serif; }
+
+h1 {
+  font-size: 7em; }
 
 header {
   background-image: url(../img/profile-img.jpg);
@@ -6848,6 +6858,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: relative; }
   header:after {
     content: "";
@@ -6867,14 +6878,29 @@ header {
     z-index: 0; }
   header .content {
     z-index: 1;
-    position: relative; }
+    position: relative;
+    margin-left: 300px;
+    margin-top: -10vh; }
+  header button.btn, header button.btn-large {
+    transform: rotate(-90deg);
+    transform-origin: bottom right;
+    position: fixed;
+    right: 0;
+    top: 25vh;
+    border-radius: 5px 5px 0 0; }
+
+.album h3 {
+  font-size: 1.5em;
+  letter-spacing: 1.5px; }
 
 .modal {
   background-color: #190703eb; }
+  .modal.bottom-sheet {
+    max-height: initial; }
   .modal .modal-footer {
     background-color: #77383f; }
-    .modal .modal-footer a {
-      color: #fff; }
+    .modal .modal-footer button {
+      color: #fff !important; }
 
 .btn, .btn-large, .btn-large {
   background: #77373f; }
@@ -6884,17 +6910,18 @@ nav {
   height: auto;
   padding: 25px;
   bottom: 0;
-  width: 400px;
+  width: 300px;
   background: #000000cf;
   left: 0;
   display: flex;
   position: fixed;
   flex-direction: column;
   justify-content: space-around; }
+  nav img {
+    max-height: 100%; }
 
 img {
-  max-width: 100%;
-  max-height: 100%; }
+  max-width: 100%; }
 
 .logo {
   height: 120px;
@@ -6914,6 +6941,21 @@ div {
   box-sizing: border-box; }
 
 .grid {
-  margin-left: 400px; }
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  margin-left: 300px;
+  padding: 25px;
+  margin-top: -12vh;
+  position: relative; }
+  .grid .square {
+    position: relative;
+    padding-top: 100%; }
+  .grid img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
 
 /*# sourceMappingURL=styles.css.map */
